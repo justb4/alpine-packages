@@ -15,12 +15,12 @@ makedepends="giflib-dev jpeg-dev libjpeg-turbo-dev libpng-dev tiff-dev zlib-dev 
 subpackages="$pkgname-dev py-$pkgname:py"
 source="http://download.osgeo.org/$pkgname/$pkgver/$pkgname-$pkgver.tar.xz"
 builddir="$srcdir/$pkgname-$pkgver"
-buildopts="--with-libkml --without-ld-shared --disable-shared --enable-static"
+buildopts="--with-libkml"
 
 build() {
 	cd "$builddir"
 
-	./configure --prefix=/usr || return 1
+	./configure --prefix=/usr $buildopts || return 1
 	make || return 1
 
 	cd swig/python
