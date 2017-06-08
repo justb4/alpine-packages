@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if ! [ -x "$(command -v apk)" ]; then
   echo 'Error: operating system not supported. Please use Alpine Linux, or install ogr2ogr manually. On macOS, this is most easily accomplished by doing `brew tap osgeo/osgeo4mac` followed with `brew install gdal2 --with-libkml`' >&2
