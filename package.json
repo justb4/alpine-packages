@@ -2,7 +2,7 @@
   "name": "alpine-gdal",
   "version": "1.0.0",
   "scripts": {
-    "install": "chmod +x ./install.sh; ./install.sh"
+    "install": "./install.sh"
   },
   "repository": {
     "type": "git",
