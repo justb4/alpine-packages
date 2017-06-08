@@ -2,7 +2,7 @@
   "name": "alpine-gdal",
   "version": "1.0.0",
   "scripts": {
-    "install": "node install.js"
+    "install": "chmod +x ./install.sh; ./install.sh"
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,5 @@
   "bugs": {
     "url": "https://github.com/HBKEngineering/alpine-packages/issues"
   },
-  "homepage": "https://github.com/HBKEngineering/alpine-packages#readme",
-  "dependencies": {
-    "lsb-release": "^0.1.0",
-    "shelljs": "^0.7.8"
-  }
+  "homepage": "https://github.com/HBKEngineering/alpine-packages#readme"
 }
