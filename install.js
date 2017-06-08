@@ -8,7 +8,7 @@ function puts(error, stdout, stderr) {
 }
 
 switch (os.type()) {
-  case "linux":
+  case "Linux":
     lsbRelease(function(_, data) {
       if (data.distributorID == "Alpine") {
         var child = exec(
